@@ -7,6 +7,7 @@
 
 #import "FCUUID.h"
 #import "UICKeyChainStore.h"
+#if !TARGET_OS_OSX
 
 
 @implementation FCUUID
@@ -467,3 +468,5 @@ NSString *const _uuidsOfUserDevicesToggleKey = @"fc_uuidsOfUserDevicesToggle";
 
 
 @end
+
+#endif

@@ -6,7 +6,7 @@
 //
 
 #import "UIDevice+FCUUID.h"
-
+#if !TARGET_OS_OSX
 @implementation UIDevice (FCUUID)
 
 -(NSString *)uuid
@@ -14,4 +14,6 @@
     return [FCUUID uuidForDevice];
 }
 
+
 @end
+#endif

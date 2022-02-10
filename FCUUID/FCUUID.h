@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
 
 extern NSString *const FCUUIDsOfUserDevicesDidChangeNotification;
@@ -37,3 +38,5 @@ extern NSString *const FCUUIDsOfUserDevicesDidChangeNotification;
 +(BOOL)uuidValueIsValid:(NSString *)uuidValue;
 
 @end
+
+#endif
